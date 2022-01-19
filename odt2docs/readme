@@ -1,0 +1,18 @@
+# requirements for build 
+copy DLLs from dotnet framework for csc.exe 
+    System.IO.Compression.dll 
+    Microsoft.Office.Interop.Word.dll 
+    System.IO.Compression.FileSystem.dll 
+    System.IO.Compression.ZipFile.dll 
+ 
+# usage 
+$odt2docx.exe folder_with_odt_xml output.docx 
+ 
+# known issues 
+output.docx empty when opened with word 
+output.odt  is OK 
+ 
+when output.odt is saved with word to out.DOCX 
+then unzipped, then compared with winmerge.exe the result is equal 
+TODO: check line endings 
+ 
