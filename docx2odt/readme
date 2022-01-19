@@ -1,0 +1,24 @@
+# requirements for build 
+copy DLLs from dotnet framework for csc.exe 
+    System.IO.Compression.dll 
+    Microsoft.Office.Interop.Word.dll 
+    System.IO.Compression.FileSystem.dll 
+    System.IO.Compression.ZipFile.dll 
+ 
+# requirements for run 
+    xmllint.exe 
+ 
+# usage 
+// test.docx  
+$mkdir git_document 
+$document_update.sh test.docs git_document 
+cd git_document 
+git init 
+git add * 
+git com -m "initial" 
+ 
+// update test.docs 
+$document_update.sh test.docs git_document 
+git status 
+git diff content.xml 
+
