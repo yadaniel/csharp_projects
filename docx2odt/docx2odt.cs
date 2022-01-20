@@ -15,6 +15,7 @@ class App {
         // Console.WriteLine();
 
         if(args.Length == 0) {
+            // TODO: maybe add option FORCE to overwrite existing outzipPath
             Console.WriteLine(@"usage: docx2odt.exe <docx> [<docx>]");
         } else {
             foreach(string infile in args) {
@@ -32,6 +33,7 @@ class App {
                     string outzipPath = $"{cwd}\\{zipfile}";
                     string unzippedDocumentFolder = outzipPath.Replace(".zip", "");
 
+                    // TODO: maybe this should be VERBOSE or DEBUG option
                     // Console.WriteLine($"zipfile => {zipfile}");
                     // Console.WriteLine($"outfile => {outfile}");
                     // Console.WriteLine($"infilePath => {infilePath}");

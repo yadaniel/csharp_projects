@@ -11,14 +11,14 @@ copy DLLs from dotnet framework for csc.exe
 # usage 
 // test.docx  
 $mkdir git_document 
-$document_update.sh test.docs git_document 
+$_docx_repo_update.sh test.docs git_document 
 cd git_document 
 git init 
 git add * 
 git com -m "initial" 
  
 // update test.docs 
-$document_update.sh test.docs git_document 
+$_docx_repo_update.sh test.docs git_document 
 git status 
 git diff content.xml 
 
