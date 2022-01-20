@@ -115,7 +115,9 @@ class App {
 
             ZipFile.CreateFromDirectory(outzipPath, zippedDocumentPath);
             File.Move(zippedDocumentPath, odtDocumentPath);
-            Convert(odtDocumentPath, docxDocumentPath, WdSaveFormat.wdFormatXMLTemplate);
+            // Convert(odtDocumentPath, docxDocumentPath, WdSaveFormat.wdFormatXMLTemplate);
+            // Convert(odtDocumentPath, docxDocumentPath, WdSaveFormat.wdFormatXML);
+            Convert(odtDocumentPath, docxDocumentPath, WdSaveFormat.wdFormatDocumentDefault);
 
             // cleanup
             Directory.Delete(outzipPath, true);
