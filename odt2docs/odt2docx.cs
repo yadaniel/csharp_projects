@@ -38,12 +38,12 @@ class App {
             string outzipPath = $"{cwd}\\{outzip}";
             string zippedDocumentPath = $"{cwd}\\{outzip}.zip";
 
-            Console.WriteLine($"infolder => {infolder}");
-            Console.WriteLine($"infolderPath => {infolderPath}");
-            Console.WriteLine($"outfile => {outfile}");
-            Console.WriteLine($"outfilePath => {outfilePath}");
-            Console.WriteLine($"outzip => {outzip}");
-            Console.WriteLine($"outzipPath => {outzipPath}");
+            // Console.WriteLine($"infolder => {infolder}");
+            // Console.WriteLine($"infolderPath => {infolderPath}");
+            // Console.WriteLine($"outfile => {outfile}");
+            // Console.WriteLine($"outfilePath => {outfilePath}");
+            // Console.WriteLine($"outzip => {outzip}");
+            // Console.WriteLine($"outzipPath => {outzipPath}");
 
             // verify odt-output
             if(File.Exists(outfilePath)) {
